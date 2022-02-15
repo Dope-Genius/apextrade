@@ -1,0 +1,64 @@
+.fancy-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://avatradfx.live/images/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.form {
+  max-width: 70rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  background-color: #f2f2f285;
+}
+
+@media only screen and (max-width: 700px) {
+  .form {
+    width: 100%;
+    padding: 4rem 2rem;
+  }  
+}
+
+.form-header {
+  text-align: center;
+}
+
+.why-invest {
+  background-color: var(--bg-color);;
+}
+
+.notification {
+  font-size: 1.6rem;
+  margin: 3rem 0;
+}
+
+.billboard-header {
+  font-size: 3rem;
+}
+
+.bi {
+  margin-left: -40px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .benefits {
+    display: block;
+  }
+
+  .benefits p {
+    margin: 1rem 0;
+  }
+  
+}

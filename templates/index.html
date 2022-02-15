@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <title>APEX TRADE</title>
+</head>
+
+<body>
+  <!-- Billboard -->
+  <section class="hero">
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <h1>Join THousands who have already traded with Apex Trade </h1>
+          <a href="#">Create Trading Account</a>
+        </div>
+        <div class="swiper-slide slide2">
+          <h1>Reliable Simple and Innovative</h1>
+          <a href="#">Create Trading Account</a>
+        </div>
+        <div class="swiper-slide slide3">
+          <h1>Guaranteed Weekly Income</h1>
+          <a href="#">Create Trading Account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trading Services -->
+  <section class="services padding-x padding-y">
+    <h2 class="main-heading center mb">Our Trading Services</h2>
+    <div class="services-text center">
+      We are Professional Traders & Portfolio Managers who return profit to investors, guaranteed and Regulated by the Securities and Exchange Commission. We offer optimum trading service that is capable of delivering profit of up to 18% of invested funds every week. We Trade on a Wide Range of Assets, Cryptos, Fx Options & Commodities.
+    </div>
+
+
+    <div class="service-card-group">
+      <div class="services-card">
+        <div class="s-card-icon center">
+          <img src="https://avatradfx.live/images/trusted-icon.png" alt="">
+        </div>
+        <h3>Trusted Company</h3>
+        <p>Trusted by thousand of
+          people all over the world. Good
+          reviews on all social channels
+        </p>
+      </div>
+
+      <div class="services-card">
+        <div class="s-card-icon center">
+          <img src="https://avatradfx.live/images/secured-icon.png" alt="">
+        </div>
+        <h3>Secured</h3>
+        <p>Secured blockchain
+          transactions, Secured investors
+          data and personal information.
+          Top level ssl certification.
+        </p>
+      </div>
+
+      <div class="services-card">
+        <div class="s-card-icon center">
+          <img src="https://avatradfx.live/images/privacy-icon.png" alt="">
+        </div>
+        <h3>Privacy</h3>
+        <p>All private information remains
+          private. APEXTRADE FX never shares
+          Private informatio
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about padding-x padding-y">
+    <h2 class="main-heading center mb">ABOUT US</h2>
+    <div class="about-group">
+      <div class="about-text">
+        <p>APEXTRADE FX is a group of investors, traders, analyst and brokers, with valuable experience in the sphere of forex and APEXTRADE FX dedicated their time to research development. Anyone all over the world can become an investor. We provide investment vehicles to investors of all sizes interested in being part of the revolutionary forex,binary option, crypto-currency and bitcoin mining world.</p>
+        <a href="#">Read More </a>
+      </div>
+
+      <div class="about-visual">
+        <iframe src="https://www.youtube.com/embed/Gc2en3nHxA4" allow="autoplay; encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Investment Packages -->
+  <section class="investments">
+    <h2 class="main-heading center">Investment Plans</h2>
+    <!-- <p class="sub-heading center">Investment plans for our members.</p> -->
+
+    <div class="invest-group">
+      <div class="investment-plan">
+        <div class="invest-center">
+          <p class="invest-type">Starter</p>
+          <p class="invest-percent">25%</p>
+          <div class="invest-p">
+            <p class="invest-return">BITCOIN MINING / TRADING</p>
+            <!-- <p>Return - $2000</p> -->
+            <p>minimum - $200</p>
+            <p>maximum - $999</p>
+          </div>
+          
+        </div>
+        <a href="{% url 'signin' %}" class="btn btn-invest">Select Plan</a>
+      </div>
+
+      <div class="investment-plan">
+        <div class="invest-center">
+          <p class="invest-type">Plus</p>
+          <p class="invest-percent">45%</p>
+          <div class="invest-p">
+            <p class="invest-return">BITCOIN MINING / TRADING</p>
+            <p>minimum - $1,000</p>
+            <p>minimum - $4,999</p>
+          </div>
+        </div>
+        <a href="{% url 'signin' %}" class="btn btn-invest center">Select Plan</a>
+      </div>
+
+      <div class="investment-plan">
+        <div class="invest-center">
+          <p class="invest-type">Premium</p>
+          <p class="invest-percent">50%</p>
+          <div class="invest-p">
+            <p class="invest-return">BITCOIN MINING / TRADING</p>
+            <p>minimum - $5,000</p>
+            <p>maximum - $9,999</p>
+          </div>
+        </div>
+        <a href="{% url 'signin' %}" class="btn btn-invest center">Select Plan</a>
+      </div>
+      
+      <div class="investment-plan">
+        <div class="invest-center">
+          <p class="invest-type">Professional</p>
+          <p class="invest-percent">65%</p>
+          <div class="invest-p">
+            <p class="invest-return">BITCOIN MINING / TRADING</p>
+            <p>minimum - $10,000</p>
+            <p>maximum - $50,000</p>
+          </div>
+        </div>
+        <a href="{% url 'signin' %}" class="btn btn-invest center">Select Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment padding-x padding-y">
+    <h2 class="main-heading center" style="color: white">Payment Plan</h2>
+    <p class="sub-heading center" style="color: white">Supported Payment Methods</p>
+    <div class="payment-group">
+      <div class="payment-types">
+        <img src="https://avatradfx.live/images/ethereum.png" alt="">
+      </div>
+      <div class="payment-types">
+        <img src="https://avatradfx.live/images/bitcoin.png" alt="">
+      </div>
+      <div class="payment-types">
+        <img src="https://cryptologos.cc/logos/versions/litecoin-ltc-logo-full.svg?v=021" alt="">
+      </div>
+      <div class="payment-types">
+        <img src="https://logos-download.com/wp-content/uploads/2019/11/Perfect_Money_Logo_full.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="testimonials padding-x padding-y">
+    <h2 class="main-heading center">Testimonies from Investors</h2>
+    <p class="sub-heading center mb" style="color: white">Supported Payment Methods</p>
+
+    <div class="swiper mySwiper3">
+      <!-- swiper wrapper -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimony">
+          <div class="test-img">
+            <img src="https://avatradfx.live/images/7488.jpg" alt="">
+          </div>
+          <p class="test-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum unde? Voluptas dicta vel labore ratione quisquam! Rerum suscipit exercitationem.
+          </p>
+          <p class="test-name">
+            Gold Miller
+          </p>
+        </div>
+
+        <div class="swiper-slide testimony">
+          <div class="test-img">
+            <img src="https://avatradfx.live/images/7488.jpg" alt="">
+          </div>
+          <p class="test-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum unde? Voluptas dicta vel labore ratione quisquam! Rerum suscipit exercitationem.
+          </p>
+          <p class="test-name">
+            Gold Miller
+          </p>
+        </div>
+
+        <div class="swiper-slide testimony">
+          <div class="test-img">
+            <img src="https://avatradfx.live/images/7488.jpg" alt="">
+          </div>
+          <p class="test-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum unde? Voluptas dicta vel labore ratione quisquam! Rerum suscipit exercitationem.
+          </p>
+          <p class="test-name">
+            Gold Miller
+          </p>
+        </div>
+
+        <div class="swiper-slide testimony">
+          <div class="test-img">
+            <img src="https://avatradfx.live/images/7488.jpg" alt="">
+          </div>
+          <p class="test-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum unde? Voluptas dicta vel labore ratione quisquam! Rerum suscipit exercitationem.
+          </p>
+          <p class="test-name">
+            Gold Miller
+          </p>
+        </div>
+
+        <div class="swiper-slide testimony">
+          <div class="test-img">
+            <img src="https://avatradfx.live/images/7488.jpg" alt="">
+          </div>
+          <p class="test-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum unde? Voluptas dicta vel labore ratione quisquam! Rerum suscipit exercitationem.
+          </p>
+          <p class="test-name">
+            Gold Miller
+          </p>
+        </div>
+
+        <div class="swiper-slide testimony">
+          <div class="test-img">
+            <img src="https://avatradfx.live/images/7488.jpg" alt="">
+          </div>
+          <p class="test-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum unde? Voluptas dicta vel labore ratione quisquam! Rerum suscipit exercitationem.
+          </p>
+          <p class="test-name">
+            Gold Miller
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    
+  </section>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }
+    });
+  </script>
+
+<script>
+  var swiper = new Swiper(".mySwiper3", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+
+  });
+</script>
+
+
+</body>
+{% endblock %}
