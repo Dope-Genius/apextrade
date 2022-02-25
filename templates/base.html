@@ -16,6 +16,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="66c91805-1a51-4037-8186-75afa7f06155";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
 </head>
 <body>
   <!-- header -->
@@ -64,11 +67,10 @@
   </div>
   <!-- TradingView Widget END -->
 
-      
+  <!-- googlet translate -->
+  <div id="google_translate_element"></div>
 
-    </section>
-
-
+  
 
 <!-- Start of the first nav -->
 <header>
@@ -119,7 +121,7 @@
       <h2 class="footer-heading footer-contact">Contact Us</h2>
       <ul class="footer-link-group">
         <li>+(277) 3546-4801</li>
-        <li>apextradefx@gmail.com</li>
+        <li>apextradefx01@gmail.com</li>
       </ul>
     </div>
   </footer>
@@ -133,6 +135,39 @@
   <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    /*
+    To remove the "powered by google",
+    uncomment one of the following code blocks.
+    NB: This breaks Google's Attribution Requirements:
+    https://developers.google.com/translate/v2/attribution#attribution-and-logos
+  */
+
+  // Native (but only works in browsers that support query selector)
+  if(typeof(document.querySelector) == 'function') {
+    document.querySelector('.goog-logo-link').setAttribute('style', 'display: none');
+    document.querySelector('.goog-te-gadget').setAttribute('style', 'font-size: 0');
+  }
+
+  // If you have jQuery - works cross-browser - uncomment this
+  jQuery('.goog-logo-link').css('display', 'none');
+  jQuery('.goog-te-gadget').css('font-size', '0');
+  }
   </script>
 </body>
 </html>

@@ -62,3 +62,35 @@
   }
   
 }
+
+/* registration details and benefit */
+.register-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem;
+}
+
+.register-detail {
+  flex: 0 0 48%;
+}
+
+.register_heading {
+  font-size: 3rem;
+}
+
+.register_detail_list li {
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px){
+  .register-details {
+    display: block;
+    padding: 6rem 2rem;
+  }
+
+  .register-detail {
+    margin-bottom: 4rem;
+  }
+}

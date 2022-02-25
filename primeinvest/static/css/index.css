@@ -64,6 +64,20 @@ body {
   }
 }
 
+/* Google Translate */
+#google_translate_element {
+  text-align: right;
+  padding-right: 2rem;
+  margin: 1rem 0;
+}
+
+.goog-te-gadget .goog-te-combo {
+  margin: 4px 10px 4px 0px !important;
+  padding: 7px;
+  border-radius:5px;
+  text-align: right;
+}
+
 /* Navigation Styling */
 .nav {
   display: flex;
@@ -606,14 +620,15 @@ body {
 }
 
 .copyright {
-  background-color: black;
-}
-
-.copyright-text {
+  /* background-color: black; */
   color: var(--black);
   font-size: 1.6rem;
   text-align: center;
   padding: 2rem 1rem;
+
+}
+
+.copyright-text {
 }
 
 @media only screen and (max-width: 600px) {
@@ -631,3 +646,22 @@ body {
   }
 }
 
+/* registration details and benefit */
+.register-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem;
+}
+
+.register-detail {
+  flex: 0 0 50%;
+}
+
+.register_heading {
+  font-size: 3rem;
+}
+
+.register-detail_list li {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
